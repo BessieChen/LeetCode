@@ -41,4 +41,3 @@ public class Solution {
         System.out.println((new Solution()).isValid("([]{}"));
     }
 }
-//不能直接push，应该先判断是左括号还是右括号!
