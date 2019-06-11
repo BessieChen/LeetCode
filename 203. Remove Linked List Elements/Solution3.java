@@ -24,7 +24,7 @@ public class Solution3
         ListNode head = new ListNode(nums);
         System.out.println(head);
 
-        ListNode res = (new Solution2()).removeElements(head, 2);
+        ListNode res = (new Solution3()).removeElements(head, 2);
         System.out.println(res);
     }
 
