@@ -6,7 +6,8 @@ public class Solution3
         {
             return null;
         }
-        ListNode res = removeElements(head.next, val);
+        //method 1:
+//         ListNode res = removeElements(head.next, val);
 //         if(head.val == val)
 //         {
 //             return res;
@@ -16,6 +17,8 @@ public class Solution3
 //             head.next = res;
 //             return head;
 //         }
+       //method 2:
+        head.next = removeElements(head.next, val);
         return head.val == val ? head.next : head;
     }
 
