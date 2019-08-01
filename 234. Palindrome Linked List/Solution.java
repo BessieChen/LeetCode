@@ -21,10 +21,10 @@ class Solution {
         if(len == 0) return true;
         
         //method 1:
-        for(int i = 0; i <= (len-1)/2; i++)
-        {
-            if(arr.get(i).compareTo(arr.get(len-1-i)) != 0) return false;
-        }
+//         for(int i = 0; i <= (len-1)/2; i++)
+//         {
+//             if(arr.get(i).compareTo(arr.get(len-1-i)) != 0) return false;
+//         }
         
         //method 2:
         for(int i = 0, j = len-1; i < j ; i++, j--)
