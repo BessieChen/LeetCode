@@ -1,3 +1,5 @@
+class Solution2
+{
 /*
     method 2:
     Runtime: 3 ms, faster than 91.37% of Java online submissions for Find Common Characters.
@@ -38,3 +40,4 @@
         
         return ret;
     }
+}
