@@ -7,6 +7,11 @@
  * }
  */
 class Solution {
+    /*
+    method 2:
+    Runtime: 0 ms, faster than 100.00% of Java online submissions for Middle of the Linked List.
+    Memory Usage: 33.9 MB, less than 100.00% of Java online submissions for Middle of the Linked List.
+    */
     public ListNode middleNode(ListNode head) {
         ListNode[] array = new ListNode[100];
         int size = 0;
