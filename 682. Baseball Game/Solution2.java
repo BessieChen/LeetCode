@@ -1,9 +1,64 @@
 class Solution2 {
+    
     public int calPoints(String[] ops) {
-        return calPoints1(ops);
+        return calPoints3(ops);
     }
     
     /*
+    method 3:
+    Runtime: 2 ms, faster than 94.47% of Java online submissions for Baseball Game.
+    Memory Usage: 36.4 MB, less than 100.00% of Java online submissions for Baseball Game.
+    */
+    private int calPoints3(String[] ops) {   
+        int[] arr = new int[ops.length];//no:ops.length()
+        int[] sum = new int[ops.length];
+        int size = 0;
+        
+        for(String s : ops)
+        {
+            char c = s.charAt(0);
+            if(Character.isLetter(c))
+            {
+                if(c == 'C')
+                {
+                    if(size > 0)
+                    {
+                        size--;
+                    } 
+                }
+                else// c == 'D'
+                {
+                    if(size > 0)
+                    {
+                        
+                        arr[size] = arr[size-1]*2;
+                        sum[size] = sum[size-1] + arr[size];
+                        size++;
+                    }
+                }
+            }
+            else if(Character.isDigit(c) || c == '-')
+            {
+                arr[size] = Integer.valueOf(s);//no:s.toDigit(); 
+                sum[size] = size == 0 ? arr[size] : sum[size-1] + arr[size];//note!
+                size++;
+            }
+            else
+            {
+                if(size > 1)
+                {
+                    
+                    arr[size] = arr[size-1] + arr[size-2];   
+                    sum[size] = sum[size-1] + arr[size];
+                    size++;
+                }
+            }
+        }
+        return size == 0 ? 0 : sum[size-1];
+    }
+    
+    
+     /*
     method 2:
     Runtime: 1 ms, faster than 100.00% of Java online submissions for Baseball Game.
     Memory Usage: 36 MB, less than 100.00% of Java online submissions for Baseball Game.
@@ -97,51 +152,51 @@ class Solution2 {
     }
     
     //wrong:
-    /*private int calPoints(String[] ops) {
-        int[] arr = new int[ops.length];//no:ops.length()
-        int[] sum = new int[ops.length];
-        int size = 0;
+//     private int calPointsWrong(String[] ops) {
+//         int[] arr = new int[ops.length];//no:ops.length()
+//         int[] sum = new int[ops.length];
+//         int size = 0;
         
-        for(String s : ops)
-        {
-            char c = s.charAt(0);
-            if(Character.isLetter(c))
-            {
-                if(c == 'C')
-                {
-                    if(size > 0)
-                    {
-                        size--;
-                    } 
-                }
-                else
-                {
-                    if(size > 0)
-                    {
-                        arr[size] = arr[size-1]*2;
-                        sum[size] = sum[size-1] + arr[size];
-                        size++;
-                    }
-                }
-            }
-            else if(Character.isDigit(c))
-            {
-                arr[size] = Integer.valueOf(s);//no:s.toDigit(); 
-                if(size == 0) sum[size] = arr[size];
-                else sum[size] = sum[size-1]+arr[size];//note!
-                size++;
-            }
-            else
-            {
-                if(size > 1)
-                {
-                    arr[size] = arr[size-1] + arr[size-2];   
-                    sum[size] = sum[size-1]+arr[size];
-                    size++;
-                }
-            }
-        }
-        return size == 0 ? 0 : sum[size-1];
-    }
-    */
+//         for(String s : ops)
+//         {
+//             char c = s.charAt(0);
+//             if(Character.isLetter(c))
+//             {
+//                 if(c == 'C')
+//                 {
+//                     if(size > 0)
+//                     {
+//                         size--;
+//                     } 
+//                 }
+//                 else// c == 'D'
+//                 {
+//                     if(size > 0)
+//                     {
+                        
+//                         arr[size] = arr[size-1]*2;
+//                         sum[size] = sum[size-1] + arr[size];
+//                         size++;
+//                     }
+//                 }
+//             }
+//             else if(Character.isDigit(c))
+//             {
+//                 arr[size] = Integer.valueOf(s);//no:s.toDigit(); 
+//                 sum[size] = size == 0 ? arr[size] : sum[size-1] + arr[size];//note!
+//                 size++;
+//             }
+//             else
+//             {
+//                 if(size > 1)
+//                 {
+                    
+//                     arr[size] = arr[size-1] + arr[size-2];   
+//                     sum[size] = sum[size-1] + arr[size];
+//                     size++;
+//                 }
+//             }
+//         }
+//         return sum[size-1];
+//     }
 }
