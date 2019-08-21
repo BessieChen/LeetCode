@@ -3,12 +3,7 @@ class Solution {
         return backspaceCompare5(S, T);
     }
     
-    
-    /*
-    method 3:
-    Runtime: 0 ms, faster than 100.00% of Java online submissions for Backspace String Compare.
-    Memory Usage: 34.4 MB, less than 100.00% of Java online submissions for Backspace String Compare.
-    */
+   
     public boolean backspaceCompare5(String S, String T) {
         int i = S.length() - 1;
         int j = T.length() - 1;
@@ -141,7 +136,7 @@ class Solution {
         for(char c : T.toCharArray())
         {
             if(c == '#' && sizeT > 0) sizeT--;
-            else if(Character.isLetter(c)) stackT[sizeT++] = c;//之前错在了这里直接写else了，因为如果写成else，会导致（c == '#' && sizeT == 0）的情况，本来应该什么都不做的，可是却变成了stackT[sizeT++] = c
+            else if(Character.isLetter(c)) stackT[sizeT++] = c;
         }
         if(sizeT != sizeS) return false;
         for(int i = 0; i < sizeT; i++) if(stackT[i] != stackS[i]) return false;
