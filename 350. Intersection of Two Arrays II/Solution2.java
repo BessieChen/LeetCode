@@ -96,7 +96,26 @@ class Solution2 {
         return ret;
     }
     
-    
+    public int[] intersect6(int[] nums1, int[] nums2) {
+        Map<Integer, Integer> map1 = new HashMap<>();
+        Map<Integer, Integer> map2 = new HashMap<>();
+        int len = nums1.length <= nums2.length ? nums1.length : nums2.length;
+        int[] ret = new int[len];
+        int size = 0;
+        
+        for(int i : nums1) map1.put(i, map1.getOrDefault(i, 0)+1);
+        for(int i : nums2) if(map1.containsKey(i)) map2.put(i, map2.getOrDefault(i, 0)+1);
+        for(Integer num : map2.keySet())
+        {
+            int count = Math.min(map1.get(num), map2.get(num));
+            for(int i = 0; i < count; i++) ret[size++] = num;
+        }
+        
+        int[] ret2 = new int[size];
+        for(int i = 0; i < size; i++) ret2[i] = ret[i];
+        return ret2;
+    }
+   
    
     
 }
