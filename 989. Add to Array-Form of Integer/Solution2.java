@@ -6,7 +6,7 @@ class Solution2 {
     public List<Integer> addToArrayForm7(int[] A, int K) {
         List<Integer> list = new ArrayList<>();
         int i = A.length-1;
-        int carry = 0;//进位的意思
+        int carry = 0;
         int sum = 0;
         
         while( i >= 0 || K > 0 || carry > 0)
@@ -26,7 +26,7 @@ class Solution2 {
     public List<Integer> addToArrayForm6(int[] A, int K) {
         List<Integer> list = new ArrayList<>();
         int i = A.length-1;
-        int carry = 0;//进位的意思
+        int carry = 0;
         int sum = 0;
         
         while( i >= 0 || K > 0 || carry > 0)
@@ -48,7 +48,7 @@ class Solution2 {
     public List<Integer> addToArrayForm5(int[] A, int K) {
         List<Integer> list = new ArrayList<>();
         int i = A.length-1;
-        int carry = 0;//进位的意思
+        int carry = 0;
         int sum = 0;
         
         while( i >= 0 || K > 0)
