@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bessie/Desktop/JOB/02 LeetCode/cpp/1351. Count Neg Numbers/main.cpp
+algorithm
+-
+iostream
+-
+iterator
+-
+vector
+-
+
