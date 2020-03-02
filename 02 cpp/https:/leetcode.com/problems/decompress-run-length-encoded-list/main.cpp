@@ -6,6 +6,8 @@ using namespace std;
 
 class Solution{
 public:
+    //Complexity: Time - O(n), and Space - O(1)
+    //insert(end, times, value):  For each pair of the form (a, b), append 'b' to the resulting vector 'a' tim
 //    Runtime: 36 ms, faster than 99.93% of C++ online submissions for Decompress Run-Length Encoded List.
 //    Memory Usage: 10 MB, less than 100.00% of C++ online submissions for Decompress Run-Length Encoded List.
     vector<int> decompressRLElist(vector<int>& nums) {
@@ -17,6 +19,7 @@ public:
         return ret;
     }
 
+    //Complexity: Time - O(n), and Space - O(1)
 //    Runtime: 40 ms, faster than 98.49% of C++ online submissions for Decompress Run-Length Encoded List.
 //    Memory Usage: 9.9 MB, less than 100.00% of C++ online submissions for Decompress Run-Length Encoded List.
     vector<int> decompressRLElist2(vector<int>& nums) {
@@ -29,6 +32,7 @@ public:
         return ret;
     }
 
+    //Complexity: Time - O(n), and Space - O(1)
     vector<int> decompressRLElist3(vector<int>& nums) {
         vector<int> ret;
         for(int i = 0; i < nums.size()/2 ; i++)
