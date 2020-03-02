@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/decompress-run-length-encoded-list/
 class Solution(object):
 
-    '''Runtime: 56 ms, faster than 70.95% of Python online submissions for Decompress Run-Length Encoded List.
+    '''Runtime: 56 ms,  faster than 70.95% of Python online submissions for Decompress Run-Length Encoded List.
     Memory Usage: 12 MB, less than 100.00% of Python online submissions for Decompress Run-Length Encoded List.'''
     def decompressRLElist(self, nums):
         """
