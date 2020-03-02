@@ -27,8 +27,8 @@ class Solution(object):
     def decompressRLElist3(self, nums):
         return [nums[i+1] for i in range(0, len(nums), 2) for _ in range(nums[i])]
 
-    # def decompressRLElist4(self, nums):#ret.append(nums[i] * [nums[i+1]])#: output would be[[4, 4, 4], [2], [5, 5, 5, 5]], so we need solution 5th below which uses sum to concatenate.
-    #     return [  nums[i]*[ nums[i + 1] ] for i in range(0, len(nums), 2)  ]
+    def decompressRLElist4(self, nums):#ret.append(nums[i] * [nums[i+1]])#: output would be[[4, 4, 4], [2], [5, 5, 5, 5]], so we need solution 5th below which uses sum to concatenate.
+        return [  nums[i]*[ nums[i + 1] ] for i in range(0, len(nums), 2)  ]
 
     '''Runtime: 56 ms, faster than 70.95% of Python online submissions for Decompress Run-Length Encoded List.
     Memory Usage: 12 MB, less than 100.00% of Python online submissions for Decompress Run-Length Encoded List.'''
@@ -58,13 +58,34 @@ def main():
     print(ret3)
 
     ret4 = Solution().decompressRLElist4(input)
-    print(ret4)
+    print("wrong solution: ", ret4)
 
     ret5 = Solution().decompressRLElist5(input)
     print(ret5)
 
     ret6 = Solution().decompressRLElist6(input)
     print(ret6)
+
+    input = [1,2,3,4,5,6,7,8]
+
+    ret = Solution().decompressRLElist(input)
+    print(ret)
+
+    ret2 = Solution().decompressRLElist2(input)
+    print(ret2)
+
+    ret3 = Solution().decompressRLElist3(input)
+    print(ret3)
+
+    ret4 = Solution().decompressRLElist4(input)
+    print("wrong solution: ", ret4)
+
+    ret5 = Solution().decompressRLElist5(input)
+    print(ret5)
+
+    ret6 = Solution().decompressRLElist6(input)
+    print(ret6)
+
 
 if __name__ == "__main__":
     main()
