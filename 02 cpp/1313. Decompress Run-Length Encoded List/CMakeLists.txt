@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(1313__Decompress_Run_Length_Encoded_List)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(1313__Decompress_Run_Length_Encoded_List main.cpp)
