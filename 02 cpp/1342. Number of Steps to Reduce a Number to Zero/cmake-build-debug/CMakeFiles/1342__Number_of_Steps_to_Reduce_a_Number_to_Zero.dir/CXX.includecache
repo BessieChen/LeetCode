@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bessie/Desktop/JOB/02 LeetCode/LeetCode/02 cpp/1342. Number of Steps to Reduce a Number to Zero/main.cpp
+iostream
+-
+cmath
+-
+
