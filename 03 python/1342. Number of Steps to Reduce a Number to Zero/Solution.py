@@ -23,7 +23,7 @@ class Solution(object):
     def numberOfSteps2 (self, num):
         ret = 0
         while num:
-            num, ret = num - 1 if num % 2 else num / 2, ret + 1 #python不可以写成if num & 1，因为&在python中不是位与运算：TypeError: unsupported operand type(s) for &: 'float' and 'int'
+            num, ret = num - 1 if num % 2 else num / 2, ret + 1 #TODO #python不可以写成if num & 1，因为&在python中不是位与运算：TypeError: unsupported operand type(s) for &: 'float' and 'int'
         return ret
 
     '''
@@ -31,7 +31,7 @@ class Solution(object):
     Memory Usage: 11.7 MB, less than 100.00% of Python online submissions for Number of Steps to Reduce a Number to Zero.
     '''
     def numberOfSteps3(self, num):
-        bits = "{0:b}".format(num)#python3: f'{num:b}'
+        bits = "{0:b}".format(num)#python3: f'{num:b}' #TODO
         return len(bits) - 1 + bits.count('1')
 
     '''Runtime: 16 ms, faster than 73.91% of Python online submissions for Number of Steps to Reduce a Number to Zero.

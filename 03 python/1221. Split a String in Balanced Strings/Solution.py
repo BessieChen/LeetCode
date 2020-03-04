@@ -18,7 +18,7 @@ class Solution:
     '''Runtime: 28 ms, faster than 68.26% of Python3 online submissions for Split a String in Balanced Strings.
     Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings.'''
     def balancedStringSplit3(self, s: str) -> int:
-        return list(acc(map(" L".find, s))).count(0)
+        return list(acc(map(" L".find, s))).count(0)#stringS = " L"; stringS.find(c); for c in s. #TODO
 
     '''Runtime: 24 ms, faster than 89.47% of Python3 online submissions for Split a String in Balanced Strings.
     Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings.'''

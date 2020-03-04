@@ -24,7 +24,7 @@ public:
         int cnt(0);
         int ret(0);
 
-        for(const auto& c : s)
+        for(const auto& c : s)//TODO
         {
             cnt += c == 'R' ? 1 : -1;
             ret += cnt == 0 ? 1 : 0;

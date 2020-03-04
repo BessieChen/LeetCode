@@ -43,6 +43,7 @@ public class Solution {
 //    Runtime: 0 ms, faster than 100.00% of Java online submissions for Number of Steps to Reduce a Number to Zero.
 //    Memory Usage: 36.4 MB, less than 100.00% of Java online submissions for Number of Steps to Reduce a Number to Zero.
     public int numberOfSteps3(int num) {
+        if( num == 0) return 0;
         int ret = 0;
         while(num > 0)
         {

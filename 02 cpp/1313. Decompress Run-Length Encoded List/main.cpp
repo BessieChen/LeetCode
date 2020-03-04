@@ -14,7 +14,7 @@ public:
         vector<int> ret;
         for(int i = 0; i < nums.size(); i += 2)
         {
-            ret.insert(ret.end(), nums[i], nums[i+1]);
+            ret.insert(ret.end(), nums[i], nums[i+1]);//TODO
         }
         return ret;
     }
@@ -35,7 +35,7 @@ public:
     //Complexity: Time - O(n), and Space - O(1)
     vector<int> decompressRLElist3(vector<int>& nums) {
         vector<int> ret;
-        for(int i = 0; i < nums.size()/2 ; i++)
+        for(int i = 0; i < (int)(nums.size()/2) ; i++)
         {
             for(int j = 0; j < nums[i*2]; j++)
                 ret.push_back(nums[i*2+1]);

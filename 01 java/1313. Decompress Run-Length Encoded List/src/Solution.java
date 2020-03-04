@@ -38,7 +38,7 @@ class Solution {
             for(int j = 0; j < nums[i]; j++)
                 list.add(nums[i+1]);
         }
-        return list.stream().mapToInt(i -> i).toArray();
+        return list.stream().mapToInt(i -> i).toArray();//TODO
     }
 
     public static void main(String[] args)

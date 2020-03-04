@@ -22,7 +22,7 @@ public:
 //    Runtime: 0 ms, faster than 100.00% of C++ online submissions for Number of Steps to Reduce a Number to Zero.
 //    Memory Usage: 7.2 MB, less than 100.00% of C++ online submissions for Number of Steps to Reduce a Number to Zero.
     int numberOfSteps2 (int num) {
-        if(!num) return 0;
+        if(!num) return 0;//TODO
         int ret = 0;
         while(num)
         {
@@ -55,7 +55,7 @@ int main() {
     std::cout<<log2(16)<<std::endl;//4
     std::cout<<(int)(log2(16))<<std::endl;//4
     std::cout<<"-----"<<std::endl;
-    std::cout<<(int)(log2(14))+1<<std::endl;//14: 0b 1110; (int)(log2(14)) == 3,
-    std::cout<<(int)(log2(16))+1<<std::endl;//16: 0b 10000
+    std::cout<<(int)(log2(14))+1<<std::endl;//4, 14: 0b 1110;
+    std::cout<<(int)(log2(16))+1<<std::endl;//5, 16: 0b 10000
     return 0;
 }
