@@ -20,6 +20,22 @@ public class Solution {
         return prod - sum;
     }
 
+//    Runtime: 0 ms, faster than 100.00% of Java online submissions for Subtract the Product and Sum of Digits of an Integer.
+//    Memory Usage: 36.7 MB, less than 100.00% of Java online submissions for Subtract the Product and Sum of Digits of an Integer.
+    public int subtractProductAndSum2(int n) {
+        if(n / 10 == 0) return 0;
+        int prod = 1;
+        int sum = 0;
+        while(n > 0)
+        {
+            int rem = n % 10;
+            prod *= rem;
+            sum += rem;
+            n /= 10;
+        }
+        return prod - sum;
+    }
+
     public static void main(String[] args)
     {
         //constraint: 1 <= n <= 10^5
@@ -27,5 +43,7 @@ public class Solution {
         int n2 = 4421;//21
         System.out.println("n1, #1: "+ new Solution().subtractProductAndSum(n1));
         System.out.println("n2, #1: "+ new Solution().subtractProductAndSum(n2));
+        System.out.println("n1, #2: "+ new Solution().subtractProductAndSum2(n1));
+        System.out.println("n2, #2: "+ new Solution().subtractProductAndSum2(n2));
     }
 }
