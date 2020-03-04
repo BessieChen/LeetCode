@@ -4,8 +4,6 @@
  * @author: Bessie
  * @create: 2020-03-04 11:41
  **/
-
-
 public class Solution {
 //    Runtime: 0 ms, faster than 100.00% of Java online submissions for Subtract the Product and Sum of Digits of an Integer.
 //    Memory Usage: 36.6 MB, less than 100.00% of Java online submissions for Subtract the Product and Sum of Digits of an Integer.
