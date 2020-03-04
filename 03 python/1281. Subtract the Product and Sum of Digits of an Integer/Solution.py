@@ -52,7 +52,7 @@ class Solution:
     '''Runtime: 16 ms, faster than 99.49% of Python3 online submissions for Subtract the Product and Sum of Digits of an Integer.
     Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Subtract the Product and Sum of Digits of an Integer.'''
     def subtractProductAndSum4(self, n: int) -> int:
-        A = list(map(int, str(n)))
+        A = list(map(int, str(n)))#int('1')
         return reduce(lambda x, y : x * y , A) - reduce(lambda x, y : x + y , A)
 
     '''Runtime: 24 ms, faster than 85.21% of Python3 online submissions for Subtract the Product and Sum of Digits of an Integer.
