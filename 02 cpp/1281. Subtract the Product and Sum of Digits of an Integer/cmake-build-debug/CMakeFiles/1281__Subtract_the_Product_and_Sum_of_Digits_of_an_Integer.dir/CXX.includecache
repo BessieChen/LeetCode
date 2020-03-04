@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bessie/Desktop/JOB/02 LeetCode/LeetCode/02 cpp/1281. Subtract the Product and Sum of Digits of an Integer/main.cpp
+iostream
+-
+

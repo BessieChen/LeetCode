@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(1281__Subtract_the_Product_and_Sum_of_Digits_of_an_Integer)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(1281__Subtract_the_Product_and_Sum_of_Digits_of_an_Integer main.cpp)
