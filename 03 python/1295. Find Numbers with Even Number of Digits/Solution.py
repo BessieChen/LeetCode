@@ -18,7 +18,7 @@ class Solution:
     '''Runtime: 52 ms, faster than 75.18% of Python3 online submissions for Find Numbers with Even Number of Digits.
     Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Find Numbers with Even Number of Digits.'''
     def findNumbers3(self, nums: List[int]) -> int:
-        return len([x for x in nums if len(str(x)) % 2 == 0])
+        return len([x for x in nums if len(str(x)) % 2 == 0])#TODO
 
     def findNumbers4(self, nums: List[int]) -> int:
         ret = 0

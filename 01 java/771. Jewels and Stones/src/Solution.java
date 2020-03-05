@@ -36,6 +36,23 @@ public class Solution {
         return ret;
     }
 
+//    Runtime: 7 ms, faster than 5.56% of Java online submissions for Jewels and Stones.
+//    Memory Usage: 38.5 MB, less than 5.05% of Java online submissions for Jewels and Stones.
+    public int numJewelsInStones3(String J, String S) {
+        return S.replaceAll("[^"+J+"]", "").length();
+    }
+
+    /*replaceAll(String regex, String replacement) is a method of
+    String objects that replaces any parts of the string that matches
+    the provided regular expression (regex) with a replacement.
+    In regex, "[ ]" matches characters that in the bracket;
+    e.g. "[abc]" matches any "a", "b", or "c".
+    "[^ ]" matches characters not in the bracket;
+    e.g. "[^ab]" will match "c" in String "abc".
+    String J was concatenated to "[^" and "]" to create
+    the regex "[^ (all characters in J) ]" in order to
+    replace any characters of S that is not in J with a blank "".*/
+
     public static void main(String[] args)
     {
 //        String J = new String("Aa");
@@ -46,6 +63,7 @@ public class Solution {
 
         System.out.println("#1: "+ new Solution().numJewelsInStones(J, S));
         System.out.println("#2: "+ new Solution().numJewelsInStones2(J, S));
+        System.out.println("#3: "+ new Solution().numJewelsInStones3(J, S));
     }
 
 
