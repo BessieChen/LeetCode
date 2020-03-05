@@ -4,6 +4,12 @@
  * @author: Bessie
  * @create: 2020-03-04 13:55
  **/
+
+/*
+* Constraints:
+1 <= nums.length <= 500
+1 <= nums[i] <= 10^5
+* */
 public class Solution {
 //    Runtime: 1 ms, faster than 94.24% of Java online submissions for Find Numbers with Even Number of Digits.
 //    Memory Usage: 38.8 MB, less than 100.00% of Java online submissions for Find Numbers with Even Number of Digits.
