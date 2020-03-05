@@ -1,0 +1,3 @@
+/Users/bessie/Desktop/JOB/02 LeetCode/LeetCode/02 cpp/1295. Find Numbers with Even Number of Digits/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/bessie/Desktop/JOB/02 LeetCode/LeetCode/02 cpp/1295. Find Numbers with Even Number of Digits/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/bessie/Desktop/JOB/02 LeetCode/LeetCode/02 cpp/1295. Find Numbers with Even Number of Digits/cmake-build-debug/CMakeFiles/1295__Find_Numbers_with_Even_Number_of_Digits.dir
