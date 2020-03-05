@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bessie/Desktop/JOB/02 LeetCode/LeetCode/02 cpp/1221. Split a String in Balanced Strings/main.cpp
+iostream
+-
+string
+-
+

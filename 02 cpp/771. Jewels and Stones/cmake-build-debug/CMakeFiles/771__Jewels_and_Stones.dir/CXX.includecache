@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bessie/Desktop/JOB/02 LeetCode/LeetCode/02 cpp/771. Jewels and Stones/main.cpp
+iostream
+-
+string
+-
+unordered_set
+-
+
