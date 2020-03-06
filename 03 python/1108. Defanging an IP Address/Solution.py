@@ -34,6 +34,12 @@ class Solution:
                 s += c
         return s
 
+    def defangIPaddr6(self, address: str) -> str:
+        s = ""
+        for c in address:
+            s += "[.]" if c == '.' else c
+        return s
+
 if __name__ == "__main__":
     s = "255.100.50.0" #255[.]100[.]50[.]0
     print("#1:", Solution().defangIPaddr(s))
@@ -41,6 +47,7 @@ if __name__ == "__main__":
     print("#3:", Solution().defangIPaddr3(s))
     print("#4:", Solution().defangIPaddr4(s))
     print("#5:", Solution().defangIPaddr5(s))
+    print("#6:", Solution().defangIPaddr6(s))
 
 
 '''
