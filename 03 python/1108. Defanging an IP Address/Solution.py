@@ -23,12 +23,24 @@ class Solution:
     def defangIPaddr4(self, address: str) -> str:
         return re.sub("\.", "[.]", address)
 
+    '''Runtime: 28 ms, faster than 56.98% of Python3 online submissions for Defanging an IP Address.
+    Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions for Defanging an IP Address.'''
+    def defangIPaddr5(self, address: str) -> str:
+        s = ""
+        for c in address:
+            if c == '.':
+                s += "[.]"
+            else:
+                s += c
+        return s
+
 if __name__ == "__main__":
     s = "255.100.50.0" #255[.]100[.]50[.]0
     print("#1:", Solution().defangIPaddr(s))
     print("#2:", Solution().defangIPaddr2(s))
     print("#3:", Solution().defangIPaddr3(s))
     print("#4:", Solution().defangIPaddr4(s))
+    print("#5:", Solution().defangIPaddr5(s))
 
 
 '''
