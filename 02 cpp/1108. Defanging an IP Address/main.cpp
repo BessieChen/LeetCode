@@ -20,6 +20,17 @@ public:
         }
         return s;
     }
+    /* 不能用三目：
+    string defangIPaddr6(string address) {
+        string s = "";
+        for(char c : address)
+        {
+            这个不报错，但是不是我们要的：s += (c == '.') ? 'x' : c;
+            这个报错：s += (c == '.') ? "[.]" : c; //? 处报错：incompatible operand types for const char* and char, 其中 const char* 指的是 "[.]", char 指的是 c 或者 '.'
+        }
+        return s;
+    }
+     */
 
 //    Runtime: 0 ms, faster than 100.00% of C++ online submissions for Defanging an IP Address.
 //    Memory Usage: 7.3 MB, less than 100.00% of C++ online submissions for Defanging an IP Address.
