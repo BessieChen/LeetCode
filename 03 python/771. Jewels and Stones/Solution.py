@@ -19,7 +19,7 @@ class Solution:
 
 if __name__ == "__main__":
     J = "Aa"
-    S = "aAAbbbb"
+    S = "aAAbbbb"#3
     print("#1:", Solution().numJewelsInStones(J, S))
     print("#2:", Solution().numJewelsInStones2(J, S))
     print("#3:", Solution().numJewelsInStones3(J, S))
