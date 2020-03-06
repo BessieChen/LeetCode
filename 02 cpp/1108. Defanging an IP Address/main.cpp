@@ -40,7 +40,7 @@ public:
             if(address[i] == '.')
             {
                 address.replace(i, 1, "[.]");
-                i += 2;
+                i += 3;
             } else{
                 i++;
             }
@@ -95,6 +95,7 @@ void testString()
     string test = "abc";
     cout<<test.size()<<endl;
     cout<<test[test.size()]<<endl;
+    cout<<test[test.size()-1]<<endl;
 }
 int main() {
     testString();

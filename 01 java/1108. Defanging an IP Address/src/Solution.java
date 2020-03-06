@@ -14,7 +14,7 @@ public class Solution {
 //    Runtime: 2 ms, faster than 34.68% of Java online submissions for Defanging an IP Address.
 //    Memory Usage: 38 MB, less than 100.00% of Java online submissions for Defanging an IP Address.
     public String defangIPaddr2(String address) {
-        return address.replaceAll("\\.", "[.]");
+        return address.replaceAll("\\.", "[.]");// "\." -> "."
     }
 
 //    Runtime: 1 ms, faster than 41.74% of Java online submissions for Defanging an IP Address.
