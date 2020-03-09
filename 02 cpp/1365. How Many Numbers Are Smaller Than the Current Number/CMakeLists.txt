@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(1365__How_Many_Numbers_Are_Smaller_Than_the_Current_Number)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(1365__How_Many_Numbers_Are_Smaller_Than_the_Current_Number main.cpp)
