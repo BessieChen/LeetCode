@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bessie/Desktop/JOB/02_LeetCode/LeetCode/02 cpp/581. Shortest Unsorted Continuous Subarray/main.cpp
+iostream
+-
+vector
+-
+

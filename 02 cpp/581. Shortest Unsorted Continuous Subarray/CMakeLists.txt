@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(581__Shortest_Unsorted_Continuous_Subarray)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(581__Shortest_Unsorted_Continuous_Subarray main.cpp)
